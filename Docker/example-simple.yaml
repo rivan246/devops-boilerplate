@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  # Database from here https://hub.docker.com/_/nginx
+  # type image os https://stackoverflow.com/a/59731596
+  webserver:
+    image: nginx
+    restart: always
+    ports:
+      - "80:80"
+
