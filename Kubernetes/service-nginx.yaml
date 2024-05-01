@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+spec:
+  selector:
+    app: nginx
+  ports:
+  - name: name-of-service-port
+    protocol: TCP
+    # port yang akan di export oleh service
+    port: 80
+    # port dari container
+    targetPort: 8000
+
+    # kubectl port-forward service/nginx-service 61256:80
