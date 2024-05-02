@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: oguzpastirmaci/hostname:latest
+        image: nginx
         ports:
-        - containerPort: 8000
+        - containerPort: 80
 
 # kubectl port-forward nginx-deployment-74df6cc96f-hcshn 61256:8000
